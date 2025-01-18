@@ -50,9 +50,12 @@ export default function AddEntries() {
     }
 
     return (
-        <div className='d-flex justify-content-center'>
+        <div className='d-flex flex-wrap justify-content-center'>
             <div className='card m-3 p-2 col-6'>
                 <form onSubmit={handleSubmit}>
+                    <div className='d-flex justify-content-center mb-2'>
+                        <h5 className='text-primary'>Add Student</h5>
+                    </div>
                     <div className='mb-2'>
                         <label className="fw-medium">Name:</label>
                         <input

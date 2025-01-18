@@ -54,6 +54,9 @@ export default function UpdateEntries() {
             <div className='d-flex justify-content-center'>
                 <div className='card m-3 p-2 col-6'>
                     <form>
+                        <div className='d-flex justify-content-center mb-2'>
+                            <h5 className='text-primary'>Update Student</h5>
+                        </div>
                         <div className='mb-2'>
                             <label className="fw-medium">Name:</label>
                             <input

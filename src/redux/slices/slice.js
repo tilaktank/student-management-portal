@@ -1,8 +1,7 @@
-// src/redux/slices/contactSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    contacts: [], // Array to store objects of { name, number }
+    contacts: [],
 };
 
 const contactSlice = createSlice({
@@ -10,19 +9,19 @@ const contactSlice = createSlice({
     initialState,
     reducers: {
         addContact(state, action) {
-            state.contacts.push(action.payload); // Add a new contact
+            state.contacts.push(action.payload);
         },
         removeContact(state, action) {
             state.contacts = state.contacts.filter(
                 (_, index) => index !== action.payload
-            ); // Remove contact by index
+            );
         },
         updateContact(state, action) {
             const { index, updatedContact } = action.payload;
-            state.contacts[index] = updatedContact; // Update contact at index
+            state.contacts[index] = updatedContact;
         },
         resetContacts(state) {
-            state.contacts = []; // Reset all contacts
+            state.contacts = [];
         },
     },
 });
