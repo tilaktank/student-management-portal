@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #beb9e2;
+
+    .btn-back {
+        .arrow-left {
+            color: white;
+        }
+    }
+
+    .btn-back:hover {
+        .arrow-left {
+            color: black;
+        }
+    }
+
+    .title {
+        h3 {
+            color: #970f61;
+        }
+    }
+}
